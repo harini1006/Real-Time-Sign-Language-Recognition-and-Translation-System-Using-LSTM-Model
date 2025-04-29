@@ -40,7 +40,7 @@ model = build_lstm_model(input_shape, num_classes)
 For real-time sign recognition, MediaPipe is used to extract keypoints from a live video feed. The system maintains a rolling window of 60 frames and continuously predicts signs based on this sequence. To avoid false positives, it excludes predictions of "no gesture" when idle. The list of valid sign classes is dynamically loaded from the dataset folder structure. Once predictions are made, the system also includes a Natural Language Translation component that converts raw sign sequences like "I GO SCHOOL" into grammatically correct English, such as "I am going to school", adapting tense and phrasing based on context.
 ### Output Graph:
 ![image](https://github.com/user-attachments/assets/277eeb90-4ea8-4455-9e40-1923a9a70dd9)
-![image](https://github.com/user-attachments/assets/3642481f-48dc-418c-bcff-05f6d62a0ee9)
+
 ### Deployment Goal
 #### Build a Web-Based Interface:
    Frontend:Captures video input and sends extracted keypoints to the backend

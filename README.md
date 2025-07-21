@@ -44,7 +44,9 @@ For real-time sign recognition, MediaPipe is used to extract keypoints from a li
 ### Deployment Goal
 #### Build a Web-Based Interface:
    Frontend:Captures video input and sends extracted keypoints to the backend
+   
    Backend: Runs the trained model and returns recognized signs
+  
    Display: Shows live predictions and translated sentences on the screen
 ### Conclusion
 The project successfully achieves real-time sign language recognition with over 82% validation accuracy, using a manually trained dataset of 100+ actions. By combining MediaPipe keypoint extraction, neutral pose masking, and LSTM-based modeling, the system delivers accurate predictions and translates gesture sequences into natural language. It’s optimized for live deployment, paving the way for inclusive and accessible communication.

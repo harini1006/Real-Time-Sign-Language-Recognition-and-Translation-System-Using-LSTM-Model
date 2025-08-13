@@ -1,6 +1,8 @@
 # Real-Time-Sign-Language-Recognition-and-Translation-System-Using-LSTM-Model
 ## Overview:
 A real-time sign language recognition system that captures video through a webcam, extracts hand pose keypoints using MediaPipe, and uses a deep learning model to classify the performed sign. The system then translates these recognized signs into natural language sentences.
+![WhatsApp Image 2025-08-13 at 10 55 43_77e5c402](https://github.com/user-attachments/assets/e3707d9e-aa88-4332-b158-b792b8667066)
+
 ## Key Components:
 ### Data Collection & Preprocessing
 The input videos of sign language gestures are manually curated and processed into 60-frame sequences. Each frame originally contains 1662 landmark values, but only the hand keypoints are used for training—specifically, 21 landmarks per hand (totaling 63 values per hand), along with 2 presence flags. To handle missing hand data, neutral poses are generated using clustering techniques and used to mask the gaps. This ensures consistent input dimensions and reduces noise during training.
